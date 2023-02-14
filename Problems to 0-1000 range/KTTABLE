@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,n,j,a,b,c;
+	cin>>t;
+	while(t--){
+	    cin>>n;
+	    int count=0,x[n],y[n];
+	    for(int i=0;i<n;i++){
+	        cin>>x[i];
+	    }
+	    for(int i=0;i<n;i++){
+	        cin>>y[i];
+	    }
+	   
+	   if(x[0]>=y[0])
+	       count++;
+	       
+	   for(int i=1;i<n;i++){
+    	    if(y[i]<=x[i]-x[i-1])
+    	       count++;
+	    }
+	    cout<<count<<endl;
+	}
+	return 0;
+}
