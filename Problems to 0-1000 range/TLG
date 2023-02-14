@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	int asum=0,bsum=0,maxlead=0,player=0;
+	while(t--){
+	    int a,b;
+	    cin>>a>>b;
+	    
+	    
+	    asum+=a;
+	    bsum+=b;
+	    
+	    int diff=abs(asum-bsum);
+	    if(diff>maxlead){
+	        maxlead=diff;
+	        if(asum>bsum)
+	            player=1;
+	        else
+	            player=2;
+	    }
+	}
+	cout<<player<<" "<<maxlead;
+	return 0;
+}
