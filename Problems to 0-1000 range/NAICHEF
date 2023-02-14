@@ -1,0 +1,27 @@
+//14-02-2023
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,n,x,y,z,count,j,a,b,c;
+	cin>>t;
+	while(t--){
+	    cin>>n>>c>>b;
+	    int a[n];
+	    for(int i=0;i<n;i++){
+	        cin>>a[i];
+	    }
+	    float ca=0,cb=0;
+	    for(int i=0;i<n;i++){
+	        if(a[i]==c)
+	            ca++;
+	        if(a[i]==b)
+	            cb++;
+	    }
+	    cout<<(ca/n)*(cb/n)<<endl;
+	}
+	
+	return 0;
+}
