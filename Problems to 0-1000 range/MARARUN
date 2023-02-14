@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int a,b,c,d,D,x,y,sum,i,j;
+	    cin>>D>>d>>a>>b>>c;
+	    j=D*d;
+	    
+	    if(j<10)cout<<0<<endl;
+	    else if(j>=10 && j<=20)
+	        cout<<a<<endl;
+	    else if(j>=21 && j<=41)
+	        cout<<b<<endl;
+	    else
+	        cout<<c<<endl;
+	        
+	    
+	}
+	return 0;
+}
