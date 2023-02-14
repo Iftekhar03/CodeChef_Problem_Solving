@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int max=101,i,n,j;
+	    cin>>n;
+	    int arr[n];
+	    for(i=0;i<n;i++)
+	        cin>>arr[i];
+	    string str;
+	    cin>>str;
+	    
+	    for(i=0;i<n;i++){
+	        char ch=str[i];
+	        if(ch=='0' && max>arr[i]){
+	            max=arr[i];
+	        }
+	    }
+	    cout<<max<<endl;
+	}
+	return 0;
+}
