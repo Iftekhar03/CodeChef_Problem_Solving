@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n,a,b,c;
+	    cin>>n>>a>>b;
+	    c=2*(180+n);
+	    cout<<c-a-b<<endl;
+	    
+	}
+	return 0;
+}
