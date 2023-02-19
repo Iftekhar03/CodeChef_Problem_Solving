@@ -1,0 +1,23 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <execution>
+using namespace std;
+
+int main(void) {
+  int t;
+  cin>>t;
+  while(t--){
+    int a,b,c,k,aa,cc,bb;
+    cin>>a>>b>>c;
+    aa=a+b;
+    bb=b+c;
+    cc=a+c;
+    if(aa==c || bb==a ||cc==b)
+      cout<<"YES"<<endl;
+    else
+      cout<<"NO"<<endl;
+  }
+  return 0;
+}
+
