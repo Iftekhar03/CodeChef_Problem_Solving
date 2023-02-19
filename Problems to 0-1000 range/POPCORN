@@ -1,0 +1,28 @@
+//19-02-2023
+
+
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <execution>
+using namespace std;
+
+int main(void) {
+  int t;
+  cin>>t;
+  while(t--){
+    int a1,a2,b1,b2,c1,c2,k,aa,cc,bb;
+    cin>>a1>>a2;
+    cin>>b1>>b2;
+    cin>>c1>>c2;
+    aa=a1+a2;
+    bb=b1+b2;
+    cc=c1+c2;
+    k=max(aa,bb);
+    if(cc>k)
+      cout<<cc<<endl;
+    else
+      cout<<k<<endl;
+  }
+  return 0;
+}
