@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef long long int ll;
+
+int main() {
+  int t;
+	cin>>t;
+	while(t--){
+	  int n,i;
+    string s;
+	  cin>>n>>s;
+    ll k=0,j=0;
+    for(i=0;i<n;i++){
+      if(s[i]=='1')
+        k++;
+      else
+        j++;
+    }
+    
+    if(j==n)
+      cout<<"0\n";
+    else if(k==n)
+      cout<<"1\n";
+    else if(k==j||k<j)
+      cout<<k<<"\n";
+    else
+      cout<<j+1<<"\n";
+	    
+	}
+  return 0;
+}
